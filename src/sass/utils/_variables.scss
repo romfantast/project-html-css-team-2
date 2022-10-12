@@ -1,0 +1,15 @@
+:root {
+  --basic-font: 'Roboto', sans-serif;
+  --basic-font-size: 14px;
+  --white-color: #fefefe;
+  --accent-dark-green: #7eb101;
+  --accent-light-green: #bbf330;
+  --accent-yellow: #ffe550;
+  --text-color: #2c2c2c;
+
+  --background-gradient: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+}
