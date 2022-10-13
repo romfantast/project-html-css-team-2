@@ -1,25 +1,39 @@
 @media screen and (min-width: 320px) {
     
     .offerings{
-        &-section {
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
+        &__title {
+            @include text(700, 28px, 33px);
         }
-        &-title {
-            @include m-title(1.18);
-        }
-        &-descript {
-            @include text-2(1.14);
+        &__descript {
+            @include text(400, 14px, 16px);
         }
         &-list {
-            &-title {
-                @include title-3(1.17);
+            &__title {
+                @include text(700, 18px, 21px);
             }
         
-            &-descript {
-                @include text-2(1.14);
+            &__descript {
+                @include text(400, 14px, 16px);
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .offerings {
+
+        &__title {
+            @include text(700, 42px, 49px);
+        }
+
+        &__descript {
+            @include text(400, 16px, 19px);
+        }
+
+        //&-list {}
     }
 }

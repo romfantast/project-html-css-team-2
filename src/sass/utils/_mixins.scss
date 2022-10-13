@@ -1,49 +1,5 @@
-@mixin title-1($height) {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: $height;
-}
-
-@mixin title-2($height) {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: $height;
-}
-
-@mixin title-3($height) {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: $height;
-}
-
-@mixin m-title($height) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: $height;
-}
-
-// TEXT
-
-@mixin text-1($height) {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: $height;
-}
-
-@mixin text-2($height) {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: $height;
-}
-
-@mixin text-3($height) {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: $height;
-}
-
-@mixin text-4($height) {
-    font-weight: 400;
-    font-size: 10px;
-    line-height: $height;
+@mixin text ($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: calc($fs / $lh );
 }
