@@ -1,5 +1,5 @@
-@mixin text ($fs, $fw, $lh) {
-    font-size: $fs;
+@mixin text ($fw, $fs, $lh) {
     font-weight: $fw;
-    line-height: calc(#{$lh}/#{$fw});
+    font-size: $fs;
+    line-height: calc($lh / $fs);
 }
