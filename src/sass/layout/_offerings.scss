@@ -4,6 +4,7 @@
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
+            gap:28px;
         &__title {
             @include text(700, 28px, 33px);
         }
@@ -11,7 +12,12 @@
             @include text(400, 14px, 16px);
         }
         &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
             &__title {
+                margin-top: 8px;
+                margin-bottom: 16px;
                 @include text(700, 18px, 21px);
             }
         
@@ -25,7 +31,7 @@
 @media screen and (min-width: 768px) {
 
     .offerings {
-
+        gap: 40px;
         &__title {
             @include text(700, 42px, 49px);
         }
@@ -33,7 +39,16 @@
         &__descript {
             @include text(400, 16px, 19px);
         }
+        &-list {
+            flex-direction: row;
+        }
+    }
+}
 
-        //&-list {}
+@media screen and (min-width: 1280px) {
+    .offerings {
+        &__link {
+            visibility: hidden;
+        }
     }
 }
