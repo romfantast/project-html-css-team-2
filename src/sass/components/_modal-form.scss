@@ -1,0 +1,164 @@
+.modal-caption {
+  @include text(700, 24px, 29px);
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+.modal-form {
+  &__field {
+    display: block;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+
+  &__field-bottom {
+    margin-bottom: 30px;
+  }
+
+  &__field-title {
+    @include text(500, 16px, 22px);
+    color: var(--text-color);
+    display: inline-block;
+    margin-bottom: 2px;
+  }
+
+  &__field-input {
+    width: 100%;
+    padding: 14px 12px;
+    cursor: pointer;
+
+    @include text(400, 16px, 20px);
+    color: var(--text-color);
+
+    background: #ffffff;
+    outline: none;
+
+    border: 1px solid var(--accent-dark-green);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+
+    &::placeholder {
+      @include text(400, 16px, 20px);
+      color: #c4c4c4;
+    }
+  }
+
+  &__btn {
+    @include text(500, 13px, 20px);
+    color: var(--text-color);
+    display: block;
+    padding: 10px 38px;
+    background: #ffffff;
+    border: 2px solid var(--accent-dark-green);
+    border-radius: 30px;
+    margin: 0 auto;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: #bbf330;
+    }
+  }
+}
+
+.modal-form-btn-wrapper {
+  position: relative;
+}
+
+.required-hint {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  top: -50%;
+  left: 50%;
+  width: 165px;
+  height: 54px;
+
+  transform: translate(-50%, -50%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-form__field-input:invalid {
+  border: 1px solid #ff705d;
+}
+.modal-form__field-input + span {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  padding-left: 16px;
+  margin-top: 2px;
+  @include text(500, 11px, 15px);
+  color: #ff705d;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form__field-input:invalid + span {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-caption {
+    @include text(700, 26px, 32px);
+    margin-bottom: 21px;
+  }
+
+  .modal-form {
+    &__field-title {
+      @include text(500, 17px, 23px);
+      margin-bottom: 3px;
+    }
+
+    &__field-input {
+      padding: 16px 13px;
+      @include text(400, 18px, 22px);
+
+      &__field-input::placeholder {
+        @include text(400, 18px, 22px);
+      }
+    }
+
+    &__btn {
+      @include text(500, 16px, 20px);
+      padding: 11px 39px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-caption {
+    @include text(700, 28px, 35px);
+    margin-bottom: 22px;
+  }
+
+  .modal-form {
+    &__field-title {
+      @include text(500, 18px, 24px);
+      margin-bottom: 4px;
+    }
+    &__field-input {
+      padding: 18px 14px;
+      @include text(400, 20px, 24px);
+
+      &__field-input::placeholder {
+        @include text(400, 20px, 24px);
+      }
+    }
+
+    &__btn {
+      @include text(500, 20px, 24px);
+      padding: 14px 44px;
+    }
+  }
+}
