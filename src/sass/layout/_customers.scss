@@ -1,5 +1,4 @@
 .customers {
-  padding: 60px 20px;
   margin: 0 auto;
   max-width: 320px;
   height: auto;
@@ -7,6 +6,11 @@
   background-size: cover;
   background-position: center;
   background-image: url("../images/background-yellow/mobile-background-2.svg");
+}
+
+.customers-container {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .customers-title {
