@@ -102,10 +102,9 @@ body {
   }
 }
 .favor {
-  display: flex;
-  flex-direction: column;
+  display: block;
   text-align: center;
-  max-width: 480px;
+  width: 480px;
   width: 100%;
   margin: 0 auto;
 }
