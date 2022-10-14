@@ -2,3 +2,27 @@
 @import './offerings';
 
 
+@media screen and (min-width: 320px) {
+    .offerings__container {
+        // background-image: url('../images/yellow-background-sprite.svg#icon-mobile-background-1');
+        background: url('../images/backgroung/Rectangle-694.svg') no-repeat;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .offerings__container {
+        background: url('../images/yellow-background-sprite.svg#icon-mobile-480-background-1') no-repeat;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .offerings__container {
+        background: url('../images/yellow-background-sprite.svg#icon-tablet-background-1');
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .offerings__container {
+        background: url('../images/yellow-background-sprite.svg#icon-decktop-background-1');
+    }
+}

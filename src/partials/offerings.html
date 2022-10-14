@@ -1,22 +1,41 @@
-<div class="container">
+<div class="container offerings__container">
     <section class="offerings section">
+        <div class="offerings__image-wrapper">
+            <picture class="offerings__image">
+                <source srcset="./images/offerings/mobile-off/1@-mob-offerings-apple.png 1x, ./images/offerings/mobile-off/2@-mob-offerings-apple.png 2x" media="(min-width: 319px)">
+                <source srcset="./images/offerings/tablet-off/1@-tabl-offerings-apple.png 1x, ./images/offerings/tablet-off/2@-tabl-offerings-apple.png 2x" media="(min-width: 767px)">
+                <source srcset="./images/offerings/desktop-off/1@-desk-offerings-apple.png 1x, ./images/offerings/desktop-off/2@-desk-offerings-apple.png 2x" media="(min-width: 1279px)">
+                <source srcset="./images/offerings/mobile-off/1@-mob-offerings-apple.webp 1x, ./images/offerings/mobile-off/2@-mob-offerings-apple.webp 2x" media="(min-width: 319px)">
+                <source srcset="./images/offerings/tablet-off/1@-tabl-offerings-apple.webp 1x, ./images/offerings/tablet-off/2@-tabl-offerings-apple.webp 2x" media="(min-width: 767px)">
+                <source srcset="./images/offerings/desktop-off/1@-desk-offerings-apple.webp 1x, ./images/offerings/desktop-off/2@-desk-offerings-apple.webp 2x" media="(min-width: 1279px)">
+                <img src="./images/offerings/mobile-off/1@-mob-offerings-apple.png" alt="An apple">
+            </picture>
+        </div>
         <h2 class="offerings__title title">What’s Special About Our Offerings</h2>
         <p class="offerings__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
             elementum tristique. Duis
             cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
         <ul class="offerings-list list">
             <li class="offerings-list__item">
+                <svg class="offerings-list__svg">
+                    <use class="offerings-list__use" href="./images/icons.svg#icon-rocket"></use>
+                </svg>
                 <h3 class="offerings-list__title">Fasest Delivery</h3>
                 <p class="offerings-list__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                     enim in eros.</p>
             </li>
             <li class="offerings-list__item">
+                <svg class="offerings-list__svg">
+                    <use class="offerings-list__use" href="./images/icons.svg#icon-touch"></use>
+                </svg>
                 <h3 class="offerings-list__title">Easy To Order</h3>
                 <p class="offerings-list__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
                     enim in eros.</p>
             </li>
         </ul>
-        <button class="offerings__button">Order Now</button>
-        <a href="/" class="offerings__link link">Read more ></a>
+        <div class="offeings-ad">
+            <button class="offerings-ad__button">Order Now</button>
+            <a href="/" class="offerings-ad__link link">Read more ></a>
+        </div>
     </section>
 </div>

@@ -101,6 +101,77 @@ body {
     padding-bottom: 100px;
   }
 }
+.nav .nav-btn {
+  min-width: 98px;
+  padding: 6px 18px;
+  border: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #2C2C2C;
+  border-radius: 30px;
+  background: #BBF330;
+}
+
+@media screen and (min-width: 320px) {
+  .offerings {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 28px;
+    background: url("../images/yellow-background-sprite.svg#icon-mobile-background-1") no-repeat;
+  }
+  .offerings__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+  .offerings__descript {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+  .offerings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .offerings-list__title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1666666667;
+  }
+  .offerings-list__descript {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+@media screen and (min-width: 768px) {
+  .offerings {
+    gap: 40px;
+  }
+  .offerings__title {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+  .offerings__descript {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+  }
+  .offerings-list {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .offerings__link {
+    visibility: hidden;
+  }
+}
 .favorit {
   display: block;
   text-align: center;
