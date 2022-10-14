@@ -23,6 +23,7 @@
 
 @media screen and (min-width: 768px) {
   .offerings {
+
     &__title {
       @include text(700, 42px, 49px);
     }
@@ -33,4 +34,5 @@
 
     //&-list {}
   }
+  
 }
