@@ -7,8 +7,8 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  //   height: 72px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,8 +27,30 @@
   display: none;
 }
 
+.navigation__item_link {
+  @include text(400, 14px, 16px);
+  color: #000000;
+}
+.navigation__item_link-active {
+  @include text(400, 14px, 16px);
+
+  color: var(--accent-light-green);
+  text-decoration: underline;
+}
+
 .header-btn {
   display: none;
+  padding: 6px 18px;
+  @include text(500, 13px, 20px);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  height: 32px;
+  color: var(--text-color);
+  border: none;
+  border-radius: 30px;
+  line-height: 0;
+  background-color: var(--accent-light-green);
 }
 
 .burger-btn {
@@ -43,69 +65,7 @@
   fill: var(--accent-dark-green);
 }
 
-@media screen and (min-width: 480px) {
-}
-
-// .navigation__list {
-//   display: flex;
-//   justify-content: center;
-//   column-gap: 28px;
-//   margin-left: 735px;
-// }
-
-// .navigation__item {
-//   color: #2c2c2c;
-// }
-
-// .navigation__item_link {
-//   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.14;
-
-//   color: #2c2c2c;
-//   transition-property: color;
-// }
-
-// .navigation__item_link:hover,
-// .navigation__item_link:focus {
-//   color: #bbf330;
-// }
-
-// .button {
-//   width: 98px;
-//   height: 32px;
-//   left: 638px;
-//   top: 20px;
-//   font-weight: 500;
-//   font-size: 13px;
-//   line-height: 1.5;
-//   background: #bbf330;
-//   border: none;
-//   border-radius: 30px;
-//   margin-left: 30px;
-//   margin-right: 16px;
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-// }
-
-// // MOBILE MENU//
-
-// .mobile-menu-btn {
-//   background-color: transparent;
-//   border: none;
-// }
-
-// .mobile-menu-btn.is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-//   background-color: rgba(0, 0, 0, 1);
-// }
-
-// .mobile-menu-btn__icon {
-//   fill: #7eb101;
-// }
-
+// mobile menu
 .mobile-menu {
   position: absolute;
   top: 50px;
@@ -164,21 +124,44 @@
 .mobile-navigation__item:focus {
   background-color: var(--accent-light-green);
 }
-// .mobile-navigation__item {
-//   background-color: transparent;
-//   transition-property: background-color;
 
-//   &:hover,
-//   &:focus {
-//     background-color: #bbf330;
-//   }
-// }
+@media screen and (min-width: 480px) {
+  .header-container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-container {
+    width: 768px;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    column-gap: 191px;
+  }
+  .navigation__list {
+    display: flex;
+    column-gap: 28px;
+  }
 
-// .mobile-navigation__item-link {
-//   font-family: 'Roboto';
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.8;
-//   color: #000000;
-// }
+  .header-btn {
+    margin-left: 28px;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-container {
+    width: 1280px;
+  }
+  .navigation {
+    column-gap: 735px;
+  }
+
+  .header-btn {
+    display: block;
+    margin-left: 24px;
+  }
+}
