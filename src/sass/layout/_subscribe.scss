@@ -101,7 +101,6 @@
   }
 
   .subscribe-picture {
-
     max-width: 281px;
 
     height: 136px;
@@ -138,7 +137,6 @@
   .subscribe-form {
     margin-bottom: 0;
   }
-
 }
 
 @media screen and (min-width: 1280px) {
@@ -170,7 +168,7 @@
 
   .subscribe-picture {
     position: absolute;
-    top: -46px
+    top: -46px;
   }
 
   .subscribe-title__text {
