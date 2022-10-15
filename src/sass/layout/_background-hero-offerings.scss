@@ -3,26 +3,32 @@
 
 
 @media screen and (min-width: 320px) {
-    .offerings__container {
-        // background-image: url('../images/yellow-background-sprite.svg#icon-mobile-background-1');
-        background: url('../images/backgroung/Rectangle-694.svg') no-repeat;
+    .offerings {
+        background: url('../images/background-yellow/mobile-background-1.svg') no-repeat;
+        background-color: var(--accent-yeloow);
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 480px) {
-    .offerings__container {
-        background: url('../images/yellow-background-sprite.svg#icon-mobile-480-background-1') no-repeat;
+    .offerings {
+        background: url('../images/background-yellow/480-background-1.svg') no-repeat;
+        background-color: var(--accent-yeloow);
     }
 }
 
 @media screen and (min-width: 768px) {
-    .offerings__container {
-        background: url('../images/yellow-background-sprite.svg#icon-tablet-background-1');
+    .offerings {
+        background: url('../images/background-yellow/tablet-background-1.svg') no-repeat;
+        background-color: var(--accent-yeloow);
     }
 }
 
-@media screen and (min-width: 1240px) {
-    .offerings__container {
-        background: url('../images/yellow-background-sprite.svg#icon-decktop-background-1');
+@media screen and (min-width: 1280px) {
+    .offerings {
+        background: url('../images/background-yellow/desktop-background-1.svg') no-repeat;
+        background-color: var(--accent-yeloow);
     }
 }
