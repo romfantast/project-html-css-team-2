@@ -3,8 +3,10 @@
   padding-left: 16px;
   padding-right: 16px;
 }
-@media screen and (min-width: 320px) {
+// стає контейнер адаптивним з 480px
+@media screen and (min-width: 480px) {
   .container {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
