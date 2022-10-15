@@ -78,6 +78,18 @@
   padding: 12px;
 }
 
+.subscribe__btn {
+  display: block;
+  width: 103px;
+  background-color: #ffffff;
+  border: 0.854167px solid var(--accent-dark-green);
+  border-radius: 30px;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 11px;
+}
+
 .subscribe__btn-name {
   @include text(500, 13px, 20px);
   color: var(--text-color);
