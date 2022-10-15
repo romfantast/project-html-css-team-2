@@ -4,10 +4,16 @@
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
     docBody: document.querySelector('body'),
+
+    headerBtn: document.querySelector('.header-btn'),
+    heroBtn: document.querySelector('.hero-button'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  refs.headerBtn.addEventListener('click', toggleModal);
+  refs.heroBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
