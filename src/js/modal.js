@@ -10,7 +10,6 @@
     offeringsBtn: document.querySelector('.interactive-block__btn'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   refs.headerBtn.addEventListener('click', toggleModal);
