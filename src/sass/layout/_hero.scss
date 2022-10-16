@@ -1,3 +1,7 @@
+.hero {
+  padding-bottom: 0;
+}
+
 // -----------MOBILE---------//
 @media screen and (max-width: 767.5px) {
   .hero-container__right-side {
@@ -67,6 +71,10 @@
 // -----------TABLET---------//
 @media screen and (min-width: 768px) {
   .hero {
+<<<<<<< Updated upstream
+=======
+    padding-top: 60px;
+>>>>>>> Stashed changes
     padding-bottom: 0;
   }
 
@@ -105,7 +113,7 @@
     
 
     position: absolute;
-    right: 0;
+    right: 32;
     top: 89px;
   }
 
@@ -159,10 +167,16 @@
 
 // -----------DESCTOP---------//
 @media screen and (min-width: 1280px) {
+<<<<<<< Updated upstream
    .hero {
     padding-bottom: 0;
 
+=======
+  .hero {
+>>>>>>> Stashed changes
     padding-top: 155px;
+    padding-bottom: 0;
+
   }
 
   .hero-container__left-side {
@@ -182,9 +196,14 @@
   }
 
   .hero-container__right-side {
+<<<<<<< Updated upstream
    top: -145px;
    right: 0;
    padding: 0 14px;
+=======
+    top: -145px;
+    right: 16px;
+>>>>>>> Stashed changes
   }
 
   .arrow {
