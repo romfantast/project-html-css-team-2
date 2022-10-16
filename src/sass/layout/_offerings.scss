@@ -111,10 +111,15 @@
 .interactive-block__btn {
   @include text(500, 13px, 20px);
   color: var(--text-color);
-  background: #ffffff;
-  border: 2px solid #7eb101;
+  background: var(--white-color);
+  border: 2px solid var(--accent-dark-green);
   border-radius: 30px;
   padding: 10px 22px;
+  transition: border-color .25s cubic-bezier(.4, 0, .2, 1);
+  &:hover,
+  &:focus {
+    border-color: #597D00;
+  }
 }
 
 .interactive-block__link {
