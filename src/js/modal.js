@@ -7,6 +7,7 @@
 
     headerBtn: document.querySelector('.header-btn'),
     heroBtn: document.querySelector('.hero-button'),
+    offeringsBtn: document.querySelector('.interactive-block__btn'),
   };
 
   refs.openModalBtn.addEventListener('click', toggleModal);
@@ -14,6 +15,7 @@
 
   refs.headerBtn.addEventListener('click', toggleModal);
   refs.heroBtn.addEventListener('click', toggleModal);
+  refs.offeringsBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
