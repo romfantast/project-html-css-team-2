@@ -6,6 +6,7 @@
 
   .hero {
     padding-top: 56px;
+    padding-bottom: 0;
   }
 }
 
@@ -65,13 +66,23 @@
 
 // -----------TABLET---------//
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+  }
+
   .hero-container {
     position: relative;
   }
 
+
+
   .hero-container__left-side {
     width: 537px;
     row-gap: 40px;
+  }
+
+  .hero-container__right-side {
+    padding: 0 8px;
   }
 
   .hero-title {
@@ -88,8 +99,10 @@
 
   // ----slider---- //
 
+
+
   .hero-container__right-side {
-    padding: 0 14px;
+    
 
     position: absolute;
     right: 0;
@@ -147,7 +160,7 @@
 // -----------DESCTOP---------//
 @media screen and (min-width: 1280px) {
    .hero {
-    padding-bottom: 155px;
+    padding-bottom: 0;
 
     padding-top: 155px;
   }
@@ -171,6 +184,7 @@
   .hero-container__right-side {
    top: -145px;
    right: 0;
+   padding: 0 14px;
   }
 
   .arrow {
