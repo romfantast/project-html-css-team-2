@@ -8,68 +8,73 @@
         </div>
     
         <div class="hero-container__right-side">
-            <a href="" class="arrow arrow-left">
+            <button type="button" class="arrow arrow-left prev" onclick="plusSlides(-1)">
             <svg class="swipe-arrow-icon swipe-left">
                 <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
-            </a>
+            </button>
 
-            <a href="" class="arrow arrow-right">
+            <button type="button" class="arrow arrow-right next" onclick="plusSlides(1)">
             <svg class="swipe-arrow-icon swipe-right">
                 <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
-            </a>
+            </button>
                                     
+            <div class="mySlides fade">
+                <picture>
+                    <source 
+                        srcset="./images/hero/hero-bread.webp 1x, ./images/hero/hero-bread@2x.webp 2x" 
+                        type="images/webp" 
+                    >    
+                    <source 
+                        srcset="./images/hero/hero-bread.png 1x, ./images/hero/hero-bread@2x.png 2x" 
+                        type="images/png"   
+                    >
+                    <img 
+                        src="./images/hero/hero-bread.png" 
+                        alt="bread" 
+                        class="slider-img">
+                </picture>
+            </div>
+            <div class="mySlides fade">
+                <picture>
+                    <source 
+                        srcset="./images/hero/hero-egg.webp 1x, ./images/hero/hero-egg@2x.webp 2x" 
+                        type="images/webp" 
+                    >    
+                    <source 
+                        srcset="./images/hero/hero-egg.png 1x, ./images/hero/hero-egg@2x.png 2x" 
+                        type="images/png"   
+                    >
+                    <img 
+                        src="./images/hero/hero-egg.png" 
+                        alt="egg" 
+                        class="slider-img">
+                </picture>
+            </div>
         
-            <picture>
-                <source 
-                    srcset="./images/hero/hero-bread.webp 1x, ./images/hero/hero-bread@2x.webp 2x" 
-                    type="images/webp" 
-                >    
-                <source 
-                    srcset="./images/hero/hero-bread.png 1x, ./images/hero/hero-bread@2x.png 2x" 
-                    type="images/png"   
-                >
-                <img 
-                    src="./images/hero/hero-bread.png" 
-                    alt="#" 
-                    class="slider-img">
-            </picture>
+            <div class="mySlides fade">
+                <picture>
+                    <source 
+                        srcset="./images/hero/hero-mix.webp 1x, ./images/hero/hero-mix@2x.webp 2x" 
+                        type="images/webp" 
+                    >    
+                    <source 
+                        srcset="./images/hero/hero-mix.png 1x, ./images/hero/hero-mix@2x.png 2x" 
+                        type="images/png"   
+                    >
+                    <img 
+                        src="./images/hero/hero-mix.png" 
+                        alt="mix" 
+                        class="slider-img">
+                </picture>
+            </div>
             
-          </div>
+
+          
         </div>
     </div>
 </div>
 
 
-		<div class="hero-container__right-side">
-			<div class="hero__slider-list-wrapper">
-				<ul class="slider-list list">
-					<li class="slider-list__swipe-left">
-						<svg class="icon-swipe-left">
-							<use href="./images/icons.svg#icon-arrow"></use>
-						</svg>
-					</li>
-					<li class="slider-list__picture">
-						<picture>
-							<!-- DESCTOP -->
-							<source srcset="#" type="images/webp" media="1280px">
-							<source srcset="#" type="images/png" media="1280px">
-							<img src="#" alt="#" width="#" class="#">
-							<!-- TABLET -->
-							<source srcset="#" type="images/webp" media="768px">
-							<source srcset="#" type="images/png" media="768px">
-							<img src="#" alt="#" width="#" class="#">
-						</picture>
-					</li>
-					<li class="slider-list__swipe-right">
-						<svg class="icon-swipe-right">
-							<use href="./images/icons.svg#icon-arrow"></use>
-						</svg>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
+		
