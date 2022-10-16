@@ -63,10 +63,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .favor {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .favorit__list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 32px;
+    gap: 32px;
   }
 
   .favorit__list-item {
