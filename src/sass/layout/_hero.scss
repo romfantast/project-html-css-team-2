@@ -5,10 +5,9 @@
   }
 
   .hero {
-    padding-top: 56px;
+    padding-top: 60px;
   }
 }
-
 
 // ----ANIMATION----//
 .fade {
@@ -16,11 +15,14 @@
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 // ----/ANIMATION----//
-
 
 .hero-container__left-side {
   display: flex;
@@ -44,22 +46,22 @@
 }
 
 .hero-button {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--text-color);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text-color);
 
-    padding: 6px 18px;
-    background: var(--accent-light-green);
-    border-radius: 30px;
-    border: none;
+  padding: 6px 18px;
+  background: var(--accent-light-green);
+  border-radius: 30px;
+  border: none;
 
-    &:hover {
-        background: #B5FF00;
-    }
+  &:hover {
+    background: #b5ff00;
+  }
 }
 
-.hero-container{
+.hero-container {
   position: relative;
 }
 
@@ -85,7 +87,6 @@
     width: 336px;
   }
 
-
   // ----slider---- //
 
   .hero-container__right-side {
@@ -97,7 +98,6 @@
   }
 
   .swipe-arrow-icon {
-
     width: 12px;
     height: 20px;
   }
@@ -107,7 +107,7 @@
     position: absolute;
     top: 50%;
 
-    background-color: white;    
+    background-color: white;
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
@@ -120,14 +120,13 @@
     align-items: center;
   }
 
-  .arrow-left{
-    left: 0;      
+  .arrow-left {
+    left: 0;
   }
 
   .arrow-right {
     right: 0;
   }
-
 
   .swipe-right {
     transform: rotate(180deg);
@@ -135,18 +134,15 @@
 
   .slider-img {
     width: 292px;
-    
+
     border-radius: 50%;
-    border: 14px solid #FFE550;
+    border: 14px solid #ffe550;
   }
-
-  
 }
-
 
 // -----------DESCTOP---------//
 @media screen and (min-width: 1280px) {
-   .hero {
+  .hero {
     padding-bottom: 155px;
 
     padding-top: 155px;
@@ -169,8 +165,8 @@
   }
 
   .hero-container__right-side {
-   top: -145px;
-   right: 0;
+    top: -145px;
+    right: 0;
   }
 
   .arrow {
@@ -183,11 +179,10 @@
     height: 29px;
   }
 
-
   .slider-img {
     width: 528px;
-    
+
     border-radius: 50%;
-    border: 26px solid #FFE550;
+    border: 26px solid #ffe550;
   }
 }
