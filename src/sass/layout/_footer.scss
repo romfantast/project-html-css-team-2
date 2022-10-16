@@ -1,30 +1,30 @@
-.footer {
-  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+.footer-shadow {
   background-image: url('../images/footer/mobile/mobile-fruit.png');
-  background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  box-shadow: 0 -10px 20px -5px rgba(105, 105, 105, 0.1);
+  width: 100%;
 }
+
 
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .footer {
+  .footer-shadow {
     background-image: url('../images/footer/mobile/mobile-fruit@2x.png');
   }
 }
 
 @media screen and(min-width: 480px) {
-  .footer {
-    width: 480px;
-  }
+  // .footer {
+  //   width: 480px;
+  // }
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
+      .footer-shadow {
       background-image: url('../images/footer/mobile/mobile-fruit@2x.png');
     }
   }
@@ -101,7 +101,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--accent-light-green);
+    background-color: var(--accent-yellow);
   }
 }
 
@@ -146,17 +146,23 @@
 
 @media screen and(min-width:768px) {
   .footer {
-    width: 768px;
-    background-image: url('../images/footer/tablet/tabl-footer-juce.png');
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    // width: 768px;
+    // background-image: url('../images/footer/tablet/tabl-footer-juce.png');
+    // margin-left: auto;
+    // margin-right: auto;
   }
 
+  .footer-shadow{
+    background-image: url('../images/footer/tablet/tabl-footer-juce.png');
+
+  }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
+    .footer-shadow {
       background-image: url('../images/footer/tablet/tabl-footer-juce@2x.png');
     }
   }
@@ -245,20 +251,24 @@
 }
 
 @media screen and(min-width: 1280px) {
-  .footer {
-    width: 1280px;
-    height: 395px;
+  .footer-shadow {
+    // width: 1280px;
+    // height: 395px;
     background-image: url('../images/footer/desktop/desk-footer-juce.png');
+    background-size: 1280px;
+    background-position-y: 160px;
+    background-position-x: center;
+  
   }
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .footer {
+    .footer-shadow {
       background-image: url('../images/footer/desktop/desk-footer-juce@2x.png');
-      background-position: 45px 128px;
-      background-size: contain;
+      // background-position: 45px 128px;
+      // background-size: contain;
     }
   }
 
