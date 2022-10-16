@@ -1,157 +1,94 @@
 .favor {
-  display: block;
-  text-align: center;
-  width: 480px;
   width: 100%;
   margin: 0 auto;
   @media screen and (min-width: 768px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-.favorit {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  max-width: 480px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    width: 100%;
-  }
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    width: 100%;
   }
 }
 .favorit__title {
-  margin: 0 auto 20px;
-  max-width: 280px;
   width: 100%;
   text-align: center;
+  color: var(--text-color);
+
+  margin-bottom: 20px;
   @include text(700, 28px, 33px);
-  color: var(--text-colorc2c);
+
   @media screen and (min-width: 768px) {
-    max-width: 656px;
     @include text(700, 42px, 49px);
-    color: var(--text-colorc2c);
   }
 }
 
 .favorit__text {
-  max-width: 280px;
   width: 100%;
   text-align: center;
-  margin: 0 auto 40px;
+  margin-bottom: 60px;
   @include text(400, 14px, 16px);
-  color: var(--text-colorc2c);
+  color: var(--text-color);
   @media screen and (min-width: 768px) {
-    max-width: 656px;
-    margin: 0 auto 40px;
     @include text(400, 16px, 19px);
-    color: var(--text-colorc2c);
   }
 }
 
 .favorit__list {
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    max-width: 768px;
-    align-items: center;
-    gap: 32px;
-    justify-content: center;
-  }
-  @media screen and (min-width: 1280px) {
-    display: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1280px;
-    align-items: center;
-    gap: 32px;
-    justify-content: center;
-  }
-}
-.favorit__list-item {
-  cursor: pointer;
-}
-
-.favorit__list-item {
-  display: block;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 20px;
-  }
-
-  @media screen and (min-width: 768px) {
-    max-width: calc((100% - 3 * 32px) / 2);
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: calc((100% - 6 * 16px) / 3);
-  }
-}
-
-.favorit__tablet {
   display: flex;
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.favorit__list-item {
+  border: 11px solid var(--accent-yellow);
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.favorit__list-item:hover,
+.favorit__list-item:focus {
+  border-color: var(--accent-light-green);
+}
+
+.favorit__list-item:nth-child(n + 4) {
+  display: none;
 }
 
 .favorit__list-item-meal {
-  display: inline-block;
-  padding: 18px;
-  border: 11px solid var(--accent-yellow);
+  min-width: 225px;
   border-radius: 50%;
-  width: 202px;
-  height: 202px;
-  background-color: transparent;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    border: 11px solid var(--accent-light-green);
+}
+
+@media screen and (min-width: 768px) {
+  .favor {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .favorit__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
   }
 
-  @media screen and (min-width: 768px) {
-    display: inline-block;
-    padding: 20px;
+  .favorit__list-item {
+    width: 336px;
+    height: 336px;
     border: 14px solid var(--accent-yellow);
-    border-radius: 50%;
-    min-width: 240px;
-    min-height: 240px;
-    max-width: 240px;
-    max-height: 240px;
-    background-color: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      border: 14px solid var(--accent-light-green);
-    }
   }
-  @media screen and (min-width: 1280px) {
-    display: inline-block;
-    padding: 24px;
-    border: 16px solid var(--accent-yellow);
-    border-radius: 50%;
-    min-width: 315px;
-    min-height: 315px;
-    background-color: transparent;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      border: 16px solid var(--accent-light-green);
-    }
+
+  .favorit__list-item:nth-child(n + 4) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .favorit__list-item {
+    width: 394px;
+    height: 394px;
   }
 }
