@@ -115,6 +115,12 @@
   border: 2px solid #7eb101;
   border-radius: 30px;
   padding: 10px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.interactive-block__btn:hover,
+.interactive-block__btn:focus {
+  background-color: var(--accent-light-green);
 }
 
 .interactive-block__link {
