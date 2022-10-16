@@ -100,7 +100,7 @@
 
   .hero-container__right-side {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 89px;
   }
 
@@ -112,7 +112,7 @@
   .arrow {
     display: block;
     position: absolute;
-    top: 50%;
+    top: 46%;
 
     background-color: white;
 
@@ -128,11 +128,11 @@
   }
 
   .arrow-left {
-    left: 0;
+    left: 13px;
   }
 
   .arrow-right {
-    right: 0;
+    right: 13px;
   }
 
   .swipe-right {
