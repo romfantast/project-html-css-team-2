@@ -1,1 +1,36 @@
-<div>subscribe</div>
+<section class="subscribe section" id="subscribe">
+	<div class="container subscribe-container">
+		<picture class="subscribe-picture">
+			<source srcset="
+          ./images/subscribe/desktop-subscr/desk-subscr-banan.png    1x,
+          ./images/subscribe/desktop-subscr/desk-subscr-banan@2x.png 2x
+        " media="(min-width: 1280px)" />
+			<source srcset="
+          ./images/subscribe/tablet-subscr/tabl-subscr-banan.png    1x,
+          ./images/subscribe/tablet-subscr/tabl-subscr-banan@2x.png 2x
+        " media="(min-width: 768px)" />
+			<source srcset="
+          ./images/subscribe/mobile-subscr/mob-subscr-banan.png    1x,
+          ./images/subscribe/mobile-subscr/mob-subscr-banan@2x.png 2x
+        " media="(min-width: 480px)" />
+			<img class="subscribe-picture__img" src="./images/subscribe/mobile-subscr/mob-subscr-banan.png" alt="banan" />
+		</picture>
+		<h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+		<p class="subscribe-title__text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+			varius enim in eros elementum tristique.
+		</p>
+		<div class="subscribe-thumb">
+			<div class="subscribe-form-container">
+				<form class="subscribe-form">
+					<label class="subscribe-form__field">
+						<input name="user-email" type="email" class="subscribe-form__input" placeholder="Enter your email" />
+					</label>
+				</form>
+			</div>
+			<div class="nav">
+				<button type="button" class="nav-btn">Subscribe</button>
+			</div>
+		</div>
+	</div>
+</section>

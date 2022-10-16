@@ -1,25 +1,67 @@
-<div class="container">
-	<section class="offerings section">
-		<h2 class="offerings__title title">What’s Special About Our Offerings</h2>
-		<p class="offerings__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-			eros
-			elementum tristique. Duis
-			cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-		<ul class="offerings-list list">
-			<li class="offerings-list__item">
-				<h3 class="offerings-list__title">Fasest Delivery</h3>
-				<p class="offerings-list__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-					varius
-					enim in eros.</p>
-			</li>
-			<li class="offerings-list__item">
-				<h3 class="offerings-list__title">Easy To Order</h3>
-				<p class="offerings-list__descript">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-					varius
-					enim in eros.</p>
-			</li>
-			<button class="offerings__button">Order Now</button>
-			<a href="/" class="offerings__link">Read more ></a>
-		</ul>
-	</section>
-</div>
+<section class="section offerings-section" id="offerings">
+	<div class="container offerings-container">
+		<div class="apple">
+			<div class="apple-big-wrapper">
+				<div class="apple-big">
+					<picture class="apple-big-picture">
+						<source
+							srcset="./images/offerings/desktop-off/desk-offerings-apple.png 1x , ./images/offerings/desktop-off/desk-offerings-apple@2x.png 2x "
+							media="(min-width: 1280px)">
+						<source srcset=" ./images/offerings/tablet-off/tabl-offerings-apple.png 1x ,
+												./images/offerings/tablet-off/tabl-offerings-apple@2x.png 2x " media=" (min-width: 768px)"
+							type="image/webp">
+						<source srcset=" ./images/offerings/mobile-off/mob-offerings-apple.png 1x ,
+																		./images/offerings/mobile-off/mob-offerings-apple@2x.png 2x " media=" (max-width: 768px)"
+							type="image/webp">
+						<img class="apple-big-image" src="./images/offerings/mobile-off/mob-offerings-apple.png" alt="">
+					</picture>
+				</div>
+			</div>
+
+			<div class="apple-medium">
+				<picture>
+					<source
+						srcset="./images/offerings/tablet-off/tabl-offerings-apple.png 1x , ./images/offerings/tablet-off/tabl-offerings-apple@2x.png 2x ">
+					<img src="./images/offerings/tablet-off/tabl-offerings-apple.png" width="166" alt="">
+				</picture>
+			</div>
+
+			<div class="apple-small">
+				<picture>
+					<source
+						srcset="./images/offerings/mobile-off/mob-offerings-apple.png 1x , ./images/offerings/mobile-off/mob-offerings-apple@2x.png 2x "
+						media="(min-width: 1280px)">
+					<img src="./images/offerings/mobile-off/mob-offerings-apple.png" width="108" alt="">
+				</picture>
+			</div>
+		</div>
+		<div class="content-block">
+			<h2 class="content-block__title">What’s Special About Our Offerings</h2>
+			<p class="content-block__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+				varius
+				enim in eros elementum
+				tristique. Duis
+				cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+
+			<ul class="content-list list">
+				<li class="content-list__item">
+					<h3 class="content-list__title">Fasest Delivery</h3>
+					<p class="content-list__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						varius enim in eros.</p>
+				</li>
+				<li class="content-list__item">
+					<h3 class="content-list__title">Easy to order</h3>
+					<p class="content-list__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+						varius enim in eros.</p>
+				</li>
+			</ul>
+
+
+			<div class="interactive-block">
+				<button type="button" class="interactive-block__btn">Order Now</button>
+				<a href="#" class="interactive-block__link link">Read More</a>
+			</div>
+		</div>
+
+	</div>
+</section>
