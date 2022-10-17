@@ -1,0 +1,2 @@
+for(var sectionSubscribeInput=document.querySelector(".subscribe-form__input"),sectionSubscribeButtons=document.querySelectorAll(".btn-accept"),i=0;i<sectionSubscribeButtons.length;i++)sectionSubscribeButtons[i].onclick=disableBtn;function disableBtn(){if(""===sectionSubscribeInput.value)for(var e=0;e<sectionSubscribeButtons.length;e++)sectionSubscribeButtons[e].disabled=!0;else if(""!=sectionSubscribeInput)for(var t=0;t<sectionSubscribeButtons.length;t++)sectionSubscribeButtons[t].disabled=!1}
+//# sourceMappingURL=index.fbaf574f.js.map
